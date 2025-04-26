@@ -26,8 +26,7 @@ module.exports = {
 			});
 			if (bannerUrl) {
 				const Embed = new Discord.MessageEmbed()
-				Embed.setTitle(`Cette Bannière Et Incroyable !!!`);
-				Embed.setDescription(`Voici La Bannière De <@${member.id}>`)
+				Embed.setDescription(`Voici la bannière de <@${member.id}>`)
 				Embed.setImage(`${bannerUrl}`);
 				Embed.setFooter(`${client.config.name}`)
 				Embed.setTimestamp()
@@ -36,7 +35,7 @@ module.exports = {
 			} else {
 				const Embed = new Discord.MessageEmbed()
 				Embed.setTitle(`${member.username}`);
-				Embed.setDescription(`<@${member.id}> Ne Possédez Pas De Bannière`);
+				Embed.setDescription(`<@${member.id}> ne possède pas de bannière`);
 				Embed.setFooter(`${client.config.name}`)
 				Embed.setTimestamp()
 				Embed.setColor(color)
